@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+h1 {
+    color: #343a40;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+}
+
+th {
+    background-color: #f1f1f1;
+}

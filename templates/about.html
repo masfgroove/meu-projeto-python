@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{{ url_for('home') }}">Home</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('form') }}">Formulário</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('table') }}">Tabela</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('logout') }}">Sair</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="mt-5">Sobre o Projeto</h1>
+        <p>Este projeto foi desenvolvido utilizando Flask e Bootstrap. Abaixo estão os detalhes das tecnologias usadas:</p>
+        <ul>
+            <li><strong>Flask:</strong> Um framework web em Python usado para construir a aplicação.</li>
+            <li><strong>Bootstrap:</strong> Um framework CSS para estilização e design responsivo da aplicação.</li>
+            <li><strong>SQLite:</strong> Banco de dados leve usado para armazenar itens no projeto.</li>
+            <li><strong>Werkzeug:</strong> Biblioteca para segurança e autenticação.</li>
+        </ul>
+    </div>
+</body>
+</html>
